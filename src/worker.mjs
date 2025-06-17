@@ -10,6 +10,7 @@ runAsWorker(
    *   filePath: string;
    *   extensionConfig?: {
    *     prettierLast?: boolean;
+   *     customPrettierEslintPath?: string;
    *   }
    * }}
    */
@@ -24,6 +25,7 @@ runAsWorker(
       filePath,
       logLevel: 'info',
       prettierLast: extensionConfig?.prettierLast,
+      customPrettierEslintPath: extensionConfig?.customPrettierEslintPath,
     });
   },
 );
